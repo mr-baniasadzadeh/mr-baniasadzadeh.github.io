@@ -1,3 +1,3 @@
 # Hi :)
 
-Wellcome! This is a personal website for mohammadreza 
+Welcome! This is a personal website for mohammadreza 
