@@ -25,7 +25,7 @@
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
+    rgb(63, 63, 64) 3%, 
     hsl(0, 0%, 19%) 97%
   );
   --bg-gradient-jet: linear-gradient(
@@ -50,8 +50,8 @@
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
+    #B784F8, 
+    #6D4F94
   );
 
   /* solid */
@@ -63,8 +63,8 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
+  --orange-yellow-crayola: #B784F8;
+  --vegas-gold: #B784F8;
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -244,6 +244,14 @@ article.active {
   padding-bottom: 7px;
 }
 
+.title-contact{
+  margin: auto;
+  text-align: center;
+  padding: 16px;
+  color: aliceblue;
+
+
+}
 .article-title::after {
   content: "";
   position: absolute;
@@ -308,8 +316,6 @@ main {
 
 
 
-
-
 /*-----------------------------------*\
   #SIDEBAR
 \*-----------------------------------*/
@@ -333,7 +339,23 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: 25px;
+  margin: auto;
+}
+
+.avatar-box-contact {
+  width: 150px;
+  height: 150px;
+  background: var(--bg-gradient-onyx);
+  border-radius: 30px;
+  margin: auto;
+}
+
+.images{
+  margin: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .info-content .name {
@@ -343,7 +365,6 @@ main {
   letter-spacing: -0.25px;
   margin-bottom: 10px;
 }
-
 .info-content .title {
   color: var(--white-1);
   background: var(--onyx);
@@ -352,7 +373,9 @@ main {
   width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
+  margin: 8px;
 }
+
 
 .info_more-btn {
   position: absolute;
@@ -414,6 +437,13 @@ main {
   max-width: calc(100% - 46px);
   width: calc(100% - 46px);
 }
+
+/* 
+.titles-item{
+  display: flex;
+  margin: 8px;
+  padding: 10px 0;
+} */
 
 .contact-title {
   color: var(--light-gray-70);
@@ -1842,7 +1872,8 @@ textarea.form-input::-webkit-resizer { display: none; }
     text-align: center;
   }
 
-  .info-content .title { margin: auto; }
+  .info-content .title { margin: auto;
+  margin-top: 8px; }
 
   .info_more-btn { display: none; }
 
